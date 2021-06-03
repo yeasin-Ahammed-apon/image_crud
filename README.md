@@ -1,21 +1,30 @@
-		laravel 8
+		## laravel 8
+       
 _______________________________________________________________________
-*database name : table
-*table name : blog_data
-*tables schema are given just need to migrate
-		*column
-			------> titel(i now it's spelling mistake , but use it for a reason, so pardon me)
-			------>	img (short form for image)
-			------> dis (short form for description)	
-________________________________________________________________________
-*mainly focused on image crud
+- database name : table
+- table name : blog_data
+- tables schema are given just need to migrate
+    - column
+	    - titel(i now it's spelling mistake , but use it for a reason, so pardon me)
+		- img (short form for image)
+		- dis (short form for description)	
 
-image crud system
-	------>read a image 
-	------>create a image
-	------>edit a image
-	------>update a image
-	------>validate
-	------>validate error massage
-	------>session massage
-	------>uploaded image extensions will be modified with update
+- mainly focused on image crud
+- mage crud system
+    - read a image
+	- create a image
+	    - image name(if exist or not)
+	    - image preview
+	    - jpg,png validation
+	- edit and update  a image
+        - image name(if exist or not)
+	    - image preview
+	    - jpg,png validation	    
+        - uploaded image extensions will aslo update
+	- validate
+	    - required , jpg and png	    
+	- validate error massage
+	    - send fail massage to blade with $error
+	- session massage
+	    - if submission success , send a massage through session
+	
