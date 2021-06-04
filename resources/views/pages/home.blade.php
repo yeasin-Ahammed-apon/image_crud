@@ -15,7 +15,7 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gap-3 justify-content-center">
                 @foreach ($data as $data)                   
                 <div class="card pt-3" style="width: 15rem; margin: 10px;">
-                    <img src="{{asset('storage/img/'.$data->img)}}" class="card-img-top" alt="{{$data->titel}}">
+                    <img src="{{asset('/storage/img/'.$data->img)}}" class="card-img-top" alt="{{$data->titel}}">
                     <div class="card-body">
                     <h5 class="card-title " style="color:$purple-500;">{{$data->titel}}</h5>
                     <p class="card-text">
